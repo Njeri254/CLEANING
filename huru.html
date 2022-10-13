@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Huru Cleaning Services</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,200;1,600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    </head>
+    <body>
+    <div class="header">
+        <nav id="navbar">
+            <ul id="menu">
+                <img src="Images/logo.jpg" class="logo">
+                <li><a href="/home.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/services.html">Services</a></li>
+                <li><a href="/testimonials.html">Testimonials</a></li>
+                <li><a href="/contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+        </div>
+        <div class="row">
+            <div class="col-2">
+            <h1>HURU CLEANING SERVICES</h1>
+            <p>Neat Around, Clean Surround is Our Keen</p>
+            <a href="" class="btn">Visit Our Webpage &#x27A3;</a>
+            </div>
+            <div class="col-2">
+                <img src="images/Mopper.jpeg" alt="">
+            </div>
+        </div>
+    <section class="howitworks">
+        <h1>How it works</h1>
+        <p>We'll clean your home weekly, every two weeks, or every three weeks.
+            All our plans include low-cost or FREE errand running services.</p>
+        <div class="row">
+            <div class="howitworks-col">
+                <h3>Get a price.</h3>
+                <p>Tell us about you, your home, and your cleaning needs.</p>
+            </div>
+            &#x279C;
+            <div class="howitworks-col">
+                <h3>Book it.</h3>
+                <p>We'll make your home shine, and run any errands you'd like.</p>
+            </div>
+            &#x279C;
+            <div class="howitworks-col">
+                <h3>Breathe, Smile and Relax.</h3>
+                <p>The house is clean, the errands are done. Time to come home.</p>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="quote">
+        <h1>Get Your Cleaning Services</h1>
+        <p>We are driven by quality and professionalism in all our work. Our Cleaning Services will ensure you live comfortably. Let us ease you the hustle of handling everything yourself.
+        </p>
+        <a href="" class="btn">Get Your Quote Now &#x27A3;</a>
+        <ul>
+            <li>
+                <label for="first">What do we do? <span>&#x3e;</span></label>
+                <input type="radio" name="accordion" id="first" checked>
+                <div class="content">
+                    <p></p>
+                </div>
+            </li>
+        </ul>
+        <form>
+            <h2>GET IN TOUCH</h2>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Email id" required>
+            <input type="text" id="phone" placeholder="Phone no." required>
+            <textarea id="message" rows="4" placeholder="How Can We Help You?"></textarea>
+            <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+            <div class="popup" id="popup">
+                <img src="">
+                <h2>Thank You!</h2>
+                <p>Your response has been submitted successfully..</p>
+                <button type="button" onclick="closePopup()">OK</button>
+            </div>
+        </form>
+    </section>
+    <section id="footer">
+        <div class="title-text">
+            <p>Contact</p>
+            <h1>Give us a call today!</h1>
+        </div>
+        <div class="footer-row">
+            <div class="footer-left">
+                <h1>Opening Hours</h1>
+                <p><i class="fa fa-clock-o" aria-hidden="true"></i>Monday to Friday - 6am to 6pm</p>
+                <p><i class="fa fa-clock-o" aria-hidden="true"></i>Saturday - 9am to 1pm</p>
+                <p>Sunday - Closed</p>
+            </div>
+            <div class="footer-right">
+                <h1>Get In Touch</h1>
+                <p><i class="fa fa-phone" aria-hidden="true"></i>+254 718416524</p>
+                <p><i class="fa fa-paper-plane-o" aria-hidden="true"></i>wellspringneat@gmail.com</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        var navbar = document.getElementById("navbar")
+        var menu = document.getElementById("menu")
+
+    window.onscroll = function(){
+        if (window.pageYOffset >= menu.offsetTop){
+            navbar.classList.add("sticky");
+        }
+        else{
+            navbar.classList.remove("sticky");
+        }
+    }
+    let popup = document.getElementById("popup");
+
+    function openPopup(){
+        popup.classList.add("open-popup");
+    }
+    function closePopup(){
+        popup.classList.remove("open-popup");
+    }
+    </script>
+</body>
+</html>
