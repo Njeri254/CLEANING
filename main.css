@@ -5,7 +5,7 @@
     font-family: 'poppins', sans-serif;
 }
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'poppins', sans-serif;
 }
 .header{
     width: 100%;
@@ -32,7 +32,7 @@ nav ul li{
     display: inline-block;
     list-style: none;
     margin: 20px 30px;
-    color: white;
+    color: cream;
 }
 .logo{
     width: 150px;
@@ -82,7 +82,7 @@ nav.sticky{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: padding 1s;
+    transition: padding 5s;
 }
 nav.sticky ul{
     width: auto;
