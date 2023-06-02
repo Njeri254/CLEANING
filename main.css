@@ -82,7 +82,7 @@ nav.sticky{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: padding 5s;
+    transition: padding 3s;
 }
 nav.sticky ul{
     width: auto;
